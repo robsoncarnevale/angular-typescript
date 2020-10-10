@@ -1,0 +1,41 @@
+{
+  "abriContas": [
+    {
+      "id": 1,
+      "name": "Robson",
+      "cpf": 33444555554,
+      "celular": 23232323232,
+      "email": "askalsk@gmail.com",
+      "data": "2020-10-21",
+      "password": "2323232332"
+    },
+    {
+      "id": 2,
+      "name": "André",
+      "cpf": 32189290200,
+      "celular": 1111111111,
+      "email": "andre@gmail.com",
+      "data": "2020-10-21",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "name": "Lucius",
+      "cpf": 333322222200,
+      "celular": 343333434343,
+      "email": "lucius@gmail.com",
+      "data": "2020-10-21",
+      "password": "123456"
+    },
+    {
+      "name": "Robson Carnevale",
+      "cpf": 3312123121231,
+      "celular": "119882989282",
+      "email": "rccimini@gmail.com",
+      "data": "2020-10-20",
+      "password": "3weqweqeqw",
+      "confirmpassword": "213123123",
+      "id": 4
+    }
+  ]
+}

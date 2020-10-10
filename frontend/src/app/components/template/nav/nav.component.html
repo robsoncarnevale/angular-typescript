@@ -1,0 +1,20 @@
+<!-- MENU -->
+<mat-toolbar class="nav" fixedTopGap="64">
+    <mat-toolbar-row>
+        <span>
+            <a routerLinkActive="active-link" routerLink="/" > institucional </a>
+            <a routerLinkActive="active-link" routerLink="/produtos"> produtos </a>
+            <a routerLinkActive="active-link" routerLink="/bdindra"> banco indra para você </a>
+            <a routerLinkActive="active-link" routerLink="/cartoes"> cartões </a>
+            <a id="divBusca">
+                <i class="material-icons">search</i>
+                <input type="text" id="txtBusca" placeholder="pesquisar..."/>
+            </a>
+        </span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+<!-- ROTAS -->
+<div class="content">
+    <router-outlet></router-outlet>
+</div>

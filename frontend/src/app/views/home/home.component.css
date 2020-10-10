@@ -1,0 +1,162 @@
+
+.card {
+    display: flex;
+    align-items: center;
+   
+}
+
+.card .main-banner {
+    background-size: cover;
+    transform: scaleX(-1);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.card .title-card{
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.1rem;
+    top: 26%;
+}
+
+.card .subtitle-card {
+    position: absolute;
+    color: #fdfdfd;
+    font-weight: 300;
+    font-size: 1.6rem;
+    top: 34%;
+}
+
+.button-card {
+    position: absolute;
+    background-color: #EC7000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 14px;
+    width: 20%;
+    top: 46%;
+    font-size: 1rem;
+}
+
+.button-card:hover {
+    background-color: #f5a056;
+    color: #fff;
+    transition: 2s;
+}
+
+@media screen and (max-width: 1280px) {
+    .card .main-banner {
+        max-width: 1280px;
+    }
+    
+    .card .title-card{
+       font-size: 2.0rem;
+    }
+  
+    .card .subtitle-card {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card .main-banner {
+        max-width: 1024px;
+        margin-top: 2%;
+    }
+
+    .card .title-card{
+        font-size: 1.6rem;
+        top: 30%;
+    }
+  
+    .card .subtitle-card {
+        font-size: 1.1rem;
+        top: 38%;
+    }
+
+    .button-card {
+        top: 50%;
+        font-size: 0.8rem;
+        width: 18%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .card .main-banner {
+        max-width: 820px;
+        margin-top: 4%;
+    }
+
+    .card .title-card{
+        font-size: 1.3rem;
+        top: 32%;
+    }
+  
+    .card .subtitle-card {
+        font-size: 1rem;
+        top: 40%;
+    }
+
+    .button-card {
+        top: 52%;
+        font-size: 0.8rem;
+        width: 20%;
+    }
+}
+  
+@media screen and (max-width: 540px) {
+    .card .main-banner {
+        max-width: 540px;
+        margin-top: 11%;
+        transform: scale(1);
+    }
+
+    .card .title-card{
+        font-size: 1.6rem;
+        top: 48%;
+    }
+  
+    .card .subtitle-card {
+       font-size: 1.1rem;
+       top: 60%;
+    }
+
+    .button-card {
+        top: 78%;
+        width: 34%;
+
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+    .card .main-banner {
+        max-width: 360px;
+        margin-top: 30%;
+        transform: scale(1);
+        height: auto;
+        background-image: url("../../../assets/img/home2.jpg") !important;
+    }
+
+    .card .title-card{
+        font-size: 1.4rem;
+        top: 46%;
+    }
+  
+    .card .subtitle-card {
+       font-size: 1.1rem;
+       top: 56%;
+    }
+
+    .button-card {
+        top: 74%;
+        width: 52%;
+
+    }
+
+}
+
+

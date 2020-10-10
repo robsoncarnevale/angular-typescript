@@ -1,0 +1,22 @@
+.form-cadastro {
+    width: 80%;
+    margin: 9% auto;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-cadastro button {
+    margin-bottom: 0.6rem;
+    text-transform: lowercase;
+}
+
+.btn-cadastrar {
+    background-color: #003399;
+    color: #fff;
+}
