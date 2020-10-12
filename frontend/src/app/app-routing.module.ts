@@ -3,11 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 /* IMPORT DAS ROTAS */
 import { HomeComponent } from './views/home/home.component';
-import { ContasCadastroComponent } from './views/contas-cadastro/contas-cadastro.component';
+import { LoginComponent } from './views/login/login.component';
 import { AccountCreateComponent } from './components/account/account-create/account-create.component';
 import { ProdutosbancoComponent } from './views/produtosbanco/produtosbanco.component';
 import { BdindraComponent } from './views/bdindra/bdindra.component';
 import { CartoesComponent } from './views/cartoes/cartoes.component';
+import { AuthGuardService } from './views/guards/auth.guard.service';
 
 /* DEFININDO ROTAS */
 const routes: Routes = [
@@ -17,23 +18,31 @@ const routes: Routes = [
   },
   {
     path: "contas",
-    component: ContasCadastroComponent
+    component: LoginComponent
   },
   {
     path: "contas/create",
     component: AccountCreateComponent
   },
   {
+    path: "contas/login",
+    component: LoginComponent
+   
+  },
+  {
     path: "produtos",
-    component: ProdutosbancoComponent
+    component: ProdutosbancoComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: "bdindra",
-    component: BdindraComponent
+    component: BdindraComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: "cartoes",
-    component: CartoesComponent
+    component: CartoesComponent,
+     canActivate: [AuthGuardService]
   }
 ];
 

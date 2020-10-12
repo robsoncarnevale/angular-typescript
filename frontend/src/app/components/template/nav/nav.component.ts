@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from './../../../views/login/login.service';
 
 
 @Component({
@@ -9,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  hideMenu: boolean = false;
 
-  ngOnInit(): void {}
+  constructor(private loginService: LoginService) { }
+
+  ngOnInit(): void {
+    this.loginService.menuEmitter.subscribe(
+      mostrarMenu => this.hideMenu = mostrarMenu
+    );
+  }
 
 }
 

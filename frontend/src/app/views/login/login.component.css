@@ -1,0 +1,61 @@
+:host {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .mat-form-field {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  mat-card-title,
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .error {
+    padding: 16px;
+    width: 300px;
+    color: #ffffff;
+    background-color: #bd0c0c;
+  }
+
+  .button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+.form {
+    margin: 12% 0;
+    flex-direction: column;
+ }
+
+ .form .btn-login {
+    background-color: #ff7b00;
+    margin-right: 15px;
+    color: #fff;
+ }
+
+ .form .btn-login:hover {
+    background-color: #ffbd67;
+    transition: 2s;
+ }
+
+ .form .btn-cadastrar {
+    background-color: #003399;
+    margin-right: 15px;
+    color: #fff;
+ }
+
+ .form .btn-cadastrar:hover {
+    background-color: #85aeff;
+    transition: 2s;
+ }
+
+ .form .alert-danger {
+    color: #644646;
+    background-color: #fa7171;
+    padding: 1rem;
+    border-radius: 0.5rem;
+ }

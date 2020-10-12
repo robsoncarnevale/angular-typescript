@@ -13,7 +13,7 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 
 /* IMPORT MATERIAL STYLE */
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -22,17 +22,20 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+
 /* IMPORT OUTROS COMPONENTES */
 import { HomeComponent } from './views/home/home.component';
 import { AccountCreateComponent } from './components/account/account-create/account-create.component';
 
 /* IMPORT VIEW */
-import { ContasCadastroComponent } from './views/contas-cadastro/contas-cadastro.component';
+import { LoginComponent } from './views/login/login.component';
 import { ProdutosbancoComponent } from './views/produtosbanco/produtosbanco.component';
 import { BdindraComponent } from './views/bdindra/bdindra.component';
 import { CartoesComponent } from './views/cartoes/cartoes.component';
 
- 
+import { LoginService } from './views/login/login.service';
+import { AuthGuardService } from './views/guards/auth.guard.service';
+
 
 @NgModule({
   declarations: [
@@ -41,11 +44,11 @@ import { CartoesComponent } from './views/cartoes/cartoes.component';
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ContasCadastroComponent,
     AccountCreateComponent,
     ProdutosbancoComponent,
     BdindraComponent,
-    CartoesComponent
+    CartoesComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,7 @@ import { CartoesComponent } from './views/cartoes/cartoes.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [LoginService, AuthGuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
