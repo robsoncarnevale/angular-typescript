@@ -5,7 +5,7 @@
   <p>
     <mat-form-field>
       agencia
-      <input [(ngModel)]="logar.agencia" type="text" required 
+      <input [(ngModel)]="logar.agencia" type="text" required pattern="\d{4}$"
       matInput maxlength="4" formControlName="agencia" id="agencia">
     </mat-form-field>
   </p>
@@ -14,15 +14,15 @@
       <div *ngIf="angForm.controls['agencia'].errors.required">
         Favor digitar o número da sua agência
       </div>
-      <div *ngIf="angForm.controls['agencia'].errors.minlength">
-        Agência tem que ter 4 digitos
+      <div *ngIf="angForm.controls['agencia'].errors.pattern">
+        Agência tem que ter 4 digitos. Ex.: 1234
       </div>
   </div>
 
   <p>
     <mat-form-field>
       conta
-      <input [(ngModel)]="logar.conta" type="text" required 
+      <input [(ngModel)]="logar.conta" type="text" required pattern="\d{6}$"
       matInput maxlength="6" formControlName="conta" id="conta">
     </mat-form-field>
   </p>
@@ -31,8 +31,8 @@
     <div *ngIf="angForm.controls['conta'].errors.required">
       Favor digitar o número da sua conta
     </div>
-    <div *ngIf="angForm.controls['conta'].errors.minlength">
-      Conta tem que ter 6 digitos
+    <div *ngIf="angForm.controls['conta'].errors.pattern">
+      Conta tem que ter 6 digitos com o traço. Ex.: 000300
     </div>
   </div>
 

@@ -24,18 +24,18 @@ export class LoginComponent implements OnInit {
               ) { 
                 this.createForm();  
               }
-              createForm() {
-                this.angForm = this.formBuilder.group({
-                     agencia: ['', Validators.required ],
-                     conta: ['', Validators.required ]
-                });
-              }
+createForm() {
+  this.angForm = this.formBuilder.group({
+        agencia: ['', Validators.required],
+        conta: ['', Validators.required ]
+  });
+}
 
   ngOnInit(): void {}
 
   login(): void {
     this.loginService.fazerLogin(this.logar)
-  }
+    }
 
   navigateToAccountCreate(): void {
     this.router.navigate(['/'])

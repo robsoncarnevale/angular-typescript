@@ -20,3 +20,17 @@ form {
     background-color: #003399;
     color: #fff;
 }
+
+
+/* checkbox */
+
+.check-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+}
+  
+  .check-margin {
+    margin: 0 10px;
+  }

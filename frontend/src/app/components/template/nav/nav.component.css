@@ -1,13 +1,18 @@
 .nav {
     font-size: 0.8rem;
     font-weight: 300;
-    position: fixed;
     z-index: 5;
     display: flex;
     align-items: flex-end;
     background-color: #EC7000;
     padding: 1.6rem 2rem;
     width: 100%;
+}
+
+@media (min-width: 992px){
+    .nav {
+        position:fixed;
+    }
 }
 
 

@@ -53,9 +53,3 @@
     transition: 2s;
  }
 
- .form .alert-danger {
-    color: #644646;
-    background-color: #fa7171;
-    padding: 1rem;
-    border-radius: 0.5rem;
- }

@@ -10,3 +10,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-middle {
     vertical-align: middle;
 }
+
+.alert-danger {
+    color: #644646;
+    background-color: #fa7171;
+    padding: 1rem;
+    border-radius: 0.5rem;
+ }
